@@ -34,7 +34,7 @@
                         <td>Contents</td>
                         <td>
                             <textarea name="contents" class="form-control">
-                                <?php echo $conclusion['contents']; ?>
+                                <?php echo trim($conclusion['contents']); ?>
                             </textarea>
                         </td>
                     </tr>
@@ -42,7 +42,8 @@
                     <tr>
                         <td></td>
                         <td>
-                            <input type="submit" class="btn btn-primary" value="Submit">
+                            <input type="submit" class="btn btn-primary" value="Submit" style="width: 49%;">
+                            <input type="text" class="btn btn-primary" value="Cancel" style="width: 49%;">
                         </td>
                     </tr>
                 </table>
@@ -63,6 +64,15 @@
                 }
             }
             ?>
+    
+    <div class="card-footer text-body-secondary">
+        <center>
+            <p>Design by <b>ÖMER KILIÇ </b> | &copy; 2023</p>
+        </center>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

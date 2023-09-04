@@ -1,5 +1,5 @@
 # MySQL-Linked-CRUD-APP_Starter-Level
-MySQL ie phpMyAdmin is a connected CRUD application. It basically includes create, read, update and delete functions with SQL.
+phpMyAdmin is a CRUD application connected to MySQL. It basically includes create, read, update and delete functions with SQL.
 # Details
 Basically, it was made to learn how to create, read, update and delete data using basic PHP and SQL.
 # File Path

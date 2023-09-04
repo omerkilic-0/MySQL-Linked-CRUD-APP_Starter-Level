@@ -43,7 +43,28 @@
             if (isset($_POST["title"])) {
                 $title = $_POST["title"];
                 $contents = $_POST["contents"];
-                if (isset($title) && isset($contents)) {
+
+                if (empty($title)) {
+                    echo '<div class="alert alert-danger" role="alert">
+                    Title field must be filled!!
+                  </div>';
+                } else if (strlen($title) < 5) {
+                    echo '<div class="alert alert-warning" role="alert">
+                    The Title field must be at least 5 characters!!
+                  </div>';
+                } else if (empty($contents)) {
+                    echo '<div class="alert alert-danger" role="alert">
+                    The Content field must be full!!{
+                  </div>';
+                } else if (strlen($contents) < 5) {
+                    echo '<div class="alert alert-warning" role="alert">
+                    The Content field must be at least 5 characters!!
+                  </div>';
+                } else if ($title == $contents) {
+                    echo '<div class="alert alert-warning" role="alert">
+                    Title and Content field cannot be the same!!
+                  </div>';
+                } else {
                     if ($connect->query("INSERT INTO article (title, contents) VALUES ('$title','$contents')")) {
                         echo "Data Added";
                     } else {
@@ -85,13 +106,22 @@
                             <a href="update.php?id=<?php echo $id; ?>" class="btn btn-primary">Update</a>
                         </td>
                         <td>
-                            <a href="delete.php?id=<?php echo $id; ?>" class="btn btn-primary">Delete</a>
+                            <a href="delete.php?id=<?php echo $id; ?>" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                 <?php } ?>
             </table>
         </div>
     </div>
+    
+    <div class="card-footer text-body-secondary">
+        <center>
+            <p>Design by <b>ÖMER KILIÇ </b> | &copy; 2023</p>
+        </center>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
