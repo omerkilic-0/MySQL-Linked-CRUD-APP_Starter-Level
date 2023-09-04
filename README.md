@@ -19,4 +19,6 @@ I developed this application during my internship at Train Payment Inc. (PAYGURU
 This project is licensed under the MIT License. See the LICENSE.md file for details.
 # Images
 ![Ekran görüntüsü 2023-08-29 154229](https://github.com/omerkilic-0/MySQL-Linked-CRUD-APP_Starter-Level/assets/123635257/15361368-707a-4dbe-bca5-d22b70b0934f)
-![Ekran görüntüsü 2023-08-29 154252](https://github.com/omerkilic-0/MySQL-Linked-CRUD-APP_Starter-Level/assets/123635257/3d62e389-66d0-4802-9e36-28c31597972b)
+![Ekran görüntüsü 2023-09-04 232929](https://github.com/omerkilic-0/MySQL-Linked-CRUD-APP_Starter-Level/assets/123635257/c6e2d403-3cd1-4ebf-b89f-3e3e3123ada8)
+![Ekran görüntüsü 2023-09-04 232956](https://github.com/omerkilic-0/MySQL-Linked-CRUD-APP_Starter-Level/assets/123635257/ed83209c-e12f-4df6-80db-25fc8f1b5b8c)
+
